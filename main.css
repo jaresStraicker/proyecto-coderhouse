@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+aca editamos el encabezado
+*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-nombre {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 0.5em;
+}
+
+.nombre {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.buscador {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador input[type="text"] {
+    width: 70%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-menu {
+    margin-right:0 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu a {
+    margin: 0 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+/* aca editamos el main*/
+
+.main-content {
+    padding-top: 5em; /* Para evitar que el contenido se superponga con el header */
+    padding: 2em 1em;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-top: 200px
+
+}
+
+.carousel div {
+    background-color: #ddd;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.profile {
+    margin-bottom: 2em;
+    text-align: center;
+}
+.photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.top-section, .fav-section {
+    margin-bottom: 2em;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #ddd;
+    width: 30%;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
