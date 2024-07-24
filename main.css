@@ -1,133 +1,358 @@
 *{
-    margin: 0%;
-    padding: 0%;
-}
-body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-/*
-aca editamos el encabezado
-*/
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-   
+/* version mvil 320 */
+
+body{
+    background-color: #451D2E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #451D2E;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo-nombre {
-    display: flex;
-    align-items: center;
-    margin-left: 1em;
-}
-
-.logo {
     height: 50px;
-    margin-right: 0.5em;
+    padding: 0;
+    box-shadow: 4px 2px 8px rgb(228, 8, 159);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    
+    z-index: 1000;
+    
+
+
 }
 
-.nombre {
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
-.buscador {
-    flex: 1;
+/* header .buscador .menu-hamburguesa{
+    display: none;
+} */
+
+header nav ul{
     display: flex;
-    justify-content: center;
+    list-style: none;
+    margin: 25px;
+    /* flex-direction: column; */
+    margin-left: 0;
+    align-content: center;
+    
+    display: none;
+        
+/*         
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px); */
+    
 }
 
-.buscador input[type="text"] {
-    width: 70%;
-    padding: 0.5em;
+header nav ul li{
+    margin: 15px;
+    width: 100%;
+    padding-left: 0;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    
+    color: white;
+    margin: 15px;
     border-radius: 5px;
-    border: none;
-}
+    box-shadow: 2px 4px 3px black;
 
-.nav-menu {
-    margin-right:0 1em;
-    color: #fff;
-    text-decoration: none;
 }
-
-.nav-menu a {
-    margin: 0 1em;
-    color: #fff;
-    text-decoration: none;
-}
-
-.nav-menu a:hover {
-    text-decoration: underline;
-}
-/* aca editamos el main*/
-
-.main-content {
-    padding-top: 5em; /* Para evitar que el contenido se superponga con el header */
-    padding: 2em 1em;
-}
-
-.carousel {
+header .logo{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 2em;
-    margin-top: 200px
-
-}
-
-.carousel div {
-    background-color: #ddd;
-    width: 30%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    margin-left:0.5em;
+    width: 45px;
+    justify-content: space-between;
+    
+}
+header div .logo-selflog{
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 5px;
+    box-shadow: 2px 2px 3px black;
+    
+}
+
+header div h1{
     border-radius: 5px;
+    box-shadow: 1px 3px 2px black;
+    display: none;
+    transition: 2s;
+    
+    
 }
 
-.profile {
-    margin-bottom: 2em;
-    text-align: center;
-}
-.photos {
+
+
+.buscador{
     display: flex;
-    justify-content: space-around;
+     flex-direction: row-reverse; 
+    
+    
+    width: 70%;
+    
+
+    
 }
 
-.photos img {
-    width: 30%;
+header .buscador .menu-hamburguesa{
+    padding: 5px;
+   
+    
+    
+    
+    transition: 2s;
+}
+
+.buscador input{
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+   display:none; 
+   
+}
+
+a:hover{
+    text-decoration:underline;
+    color: gray;
+}
+.border-btn{
+    margin-top: 2px;
+    border: 1px solid gray;
+    box-shadow: 3px 6px 4px rgb(202, 183, 183);
+}
+
+
+section .card-container img{
+    width: 100%;
     height: auto;
-    border-radius: 5px;
+    display: block;
+    }
+.card-container ul{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fil(minmax(200px)), 1fr);
+    /* grid-template-rows: repeat(12, 1fr); */
+    padding: 0;
+    margin-top: 10px;
+    gap: 20px;
+    list-style: none;
+ 
+    
+
 }
 
-.top-section, .fav-section {
-    margin-bottom: 2em;
+.card{
+    border: 1px solid rgb(151, 46, 114);
+    border-radius: 8px;
+    overflow: hidden;
+    
+
 }
 
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.card {
-    background-color: #ddd;
-    width: 30%;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 5px;
+.card-contenido{
+    padding: 16px;
     text-align: center;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+
+
+
+
+/* .carousel-item{
+    height: 350px; 
+} */
+
+
+
+
+
+/* version movil hasta 600px */
+
+@media only screen and (min-width: 600px){
+    header{
+        height: 80px;
+        padding: 0;
+        
+        
+        
+    }
+  
+   
+
+    
+
+
+
+   
+    /* header nav ul{
+        flex-direction: column;
+        margin-left: 0;
+        align-content: center;
+        background-color: red;
+        
+        
+        position: fixed;
+        top: 25px;
+        left: 1;
+        width: 100%;
+        height: calc(100% - 50px);
+    } */
+
+    /* header nav ul li{
+        align-items: center;
+        margin: 15px;
+        width: 100%;
+        padding-left: 0;
+
+    } */
+   
+
+    /* header .logo h1{
+        display: block;
+        margin-left: 25px;
+        
+        
+    } */
+    
+    header .logo img{
+        width: 50px;
+    }
+
+    
+
+    .carousel-item{
+        height: 360px; 
+    }
+    /* }
+    header div input{
+        display: block;
+    } */
+
+    .border-btn{
+        
+        border: 1px solid gray;
+        box-shadow: 3px 2px 4px rgb(6, 219, 219);
+    }
+   
+    
+    section .card-container img{
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+    .card-container ul{
+        
+        display: grid;
+        grid-template-columns: repeat((auto-fil(minmax 200px)), 1fr);
+        
+        
+        
+        padding: 0;
+        margin-top: 10px;
+        gap: 20px;
+        list-style: none;
+     
+        
+    
+    }
+    
+    .card-container ul li{
+        border: 1px solid rgb(151, 46, 114);
+        border-radius: 8px;
+        
+        width: 90%;
+        margin: 30px;
+        overflow: hidden;
+        
+    
+    }
+    
+    .card-contenido{
+        padding: 16px;
+        text-align: center;
+    }
+    
+    
+    
+    
+   
+    
+ 
+    
+} 
+/* version tablet 768px a 1023px */
+@media only screen and (min-width: 768px){
+   
+    header nav ul{
+        display: flex;
+        
+        
+    }
+    header .buscador .menu-hamburguesa{
+        display: none;
+      }
+}
+
+    /* version de 1023px a 1024px */
+@media only screen and (min-width:1023px){
+    header .logo h1{
+        display: flex;
+        margin-left: 160px;
+    }
+    section .card-container{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .card-container ul{
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        justify-content: center;
+        
+        
+        
+        
+    }
+    
+   
+     
+        
+    
+}
+
+/* version tablet 1024px */
+@media only screen and (min-width: 1024px){
+    
+    header .logo h1{
+        margin-left: 25px;
+    }
+
+}
+/* version despstok y portatil > 1200px */
+@media only screen and (min-width: 1200px){
+    header .buscador input{
+        display: flex;
+    }
+    .card-container ul{
+        display: grid;
+        grid-template-columns: repeat(4,300px);
+        justify-content: center;
+        
+        
+        
+        
+    }
+    
 }
