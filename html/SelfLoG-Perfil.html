@@ -10,41 +10,95 @@
     <header>
         <!--logo y nombre de de la marca-->
         <div
-        class="logo-nombre">
-        <img src="/images/profile/channels4_profile.jpg" alt="Logo-SelfLoG.jpg" class="logo">
-        <h1 class="nombre">SelfLoG</h1>
+        class="logo">
+        <img src="/images/profile/channels4_profile.jpg" alt="Logo-SelfLoG.jpg" class="logo-selflog">
+        <h1 class="inicio-logo"><a href="/index.html">SelfLoG</a></h1>
         </div>
         <div class="buscador">
-        <input type="text" placeholder="Buscar...">
+        <input type="text" placeholder="Buscar..." class="input">
+        <img src="/images/bx-menu.svg" alt="menu-hamburguesa" class="menu-hamburguesa">
         </div>
         <nav class="nav-menu">
-            <a href="../index.html">Inicio</a>
-            <a href="/html/SelfLoG-Perfil.html">Perfil</a>
-            <a href="/html/SelfLoG-Top.html">Top10</a>
-            <a href="/html/SelfLoG-fav.html">Fav</a>
-            <a href="/html/SelfLog-Contactos.html">Contactos</a>
+            <ul class="conainer-de-list">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/html/SelfLoG-Perfil.html">Perfil</a></li>
+                <li><a href="/html/SelfLoG-Top.html">Top10</a></li>
+                <li><a href="/html/SelfLoG-fav.html">Favoritos</a></li>
+                <li><a href="/html/SelfLog-Contactos.html">Contactos</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="main-content">
+    <main>
         <!--Cupero de nuestra pagina, en esta seccion se encuentra el perfil del usuario y sus caracteristacas-descripcion-->
-        <section class="user-info">
+        <section>
+            
         
-                <img src="foto_principal" alt="foto_principal">
-                <h3>Nombre</h3>
-                <p>descripcion-info del usuario</p>
+                <div class="contenedor-datos-user">
+                    <div class="contenedor-perfil">
+                        <img src="/images/profile-1/a4234e9018403625e12868693224ce6b.jpg" class="perfil">
+                    </div>
+                    <div class="contenedor-descripcion">
+                            <h3 class="name-perfil"><strong>Jares Straicker</strong></h3>
+                            <p class="descripcion-perfil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex necessitatibus tenetur dolor animi perferendis nemo</p>
+                    </div>
+                    
+                    <div class="contenedor-contador">
+                        <div class="contenedor-items">
+                            <div class="items-contador p1">
+                                <h5>580</h5>
+                                <p><strong>SelfLoG</strong></p>
+                            </div>
+                            <div class="items-contador p2">
+                                <h5>999K</h5>
+                                <p><strong>Star</strong><img src="/images/icon/bxs-star.svg" alt="star" class="star-self"></p>
+                            </div>
+                            <div class="items-contador p3">
+                                <h5>100K</h5>
+                                <p><strong>Seguidores</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mejores-fotos-user">
+                        <div class="mejoresfotos-user">
+                            <img src="/images/profile/channels4_profile.jpg" alt="foto-mejor-selflog">
+                        
+                        </div>
+                        <div class="mejoresfotos-user">
+                            <img src="/images/profile/channels4_profile.jpg" alt="foto top 2-perfil">
+                        </div>
+                        <div class="mejoresfotos-user">
+                            <img src="/images/profile/channels4_profile.jpg" alt="foto top 3 perfil">
+                        </div>
+                    </div>
+                </div>
+
             
         </section>
         <!--Galeria de fotos del usuario-->
         <section class="gallery">
             <div>
-                <h4>mejores fotos</h4>
-                <img src="foto_1" alt="foto_1">
-                <img src="foto_2" alt="foto_2">
-                <img src="foto_3" alt="foto_3">
+                <h2>Mis fotos</h2>
+                <img src="/images/a133ca9fa294aa25168eb3803d38b49b.png" alt="foto_1">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/channels4_profile.jpg" alt="foto_3">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+                <img src="/images/a9aca1081b502c08878c0287d54d2bc3.jpg" alt="foto_2">
+            </div>
+            <div class="video">
+                <h4>videos</h4>
+                <video src="/videos/INTRO DEL CANAL DE JARES STRAICKER AND LUCYLOLES69.mp4" autoplay class="video-perfil"></video>
+               
             </div>
         </section>
         <!--Comentario de otros usuarios sobre las fotos del usuario/login-->
-        <section class="Comentarios">
+        <!-- <section class="Comentarios">
             <div>
                 <h3>Comentarios</h3>
                 <p>
@@ -56,58 +110,73 @@
                     Comentario sobre la foto.
                 </p>
             </div>
-        </section>
+        </section> -->
         <!--videos del usuario-->
-        <section class="videos">
+        
              <!--div videos, se agrega la etiqueta img a modo ilustrarivo-->
-             <div>
-                <h4>videos</h4>
-                <img src="video_01" alt="video_01">
-                <img src="video_01" alt="video_02">
-                <img src="video_01" alt="video_03">
-            </div>
-        </section>
+             
+        
         <!--Grupos de fotos  del usuario-->
-        <section class="grupos">
+        <!-- <section class="grupos">
             <h4>Grupos de fotos</h4>
             <div>
                 <img src="foto_grupo_01" alt="Foto_01G1">   
                 <img src="foto_grupo_02" alt="Foto_01G2">   
                 <img src="foto_grupo_03" alt="Foto_01G3">
-            </div>
+            </div> -->
             
             
             
             
             
-        </section>
+        
     </main>
     <footer>
-        <section class="Contac">
-            <div>
-                <p>11-22-2222</p>
+        
+        <section>
+            <div class="container-redes-form">
+                <div class="logo-selfLoG"><img src="/images/profile/channels4_profile.jpg" alt="selfLoG" class="selft-logo-01"></div>
+               <ul>
+                    <li><a href="#"><img src="/images/icon/facebook.png" alt="facebook-logo"></a></li>
+                    <li><a href="#"><img src="/images/icon/gorjeo.png" alt="x-logo"></a></li>
+                    <li><a href="#"><img src="/images/icon/whatsapp.png" alt="whatsapp-logo"></a></li>
+                    <li><a href="#"><img src="/images/icon/social.png" alt="instagram-logo"></a></li>
+               </ul>
+               
+               <div class="container-form">
+                   <form action="jares.php" class="formulario">
+                        <label for="name">WeelKy Newsletter</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <input type="submit" value="Suscribe" class="suscribite">
+                    </form>
+               </div>
+                
+                    <!-- <p>Redes Sociales</p> -->
             </div>
-            <div>
-                <a href="selflog033@gmail.com">selflog033@gmail.om</a>
-            </div>
-            <div>
-                <p>1744 Narnia park <br> IA 26253</p>
-            </div>
-            <div>
-                <p>Redes Sociales</p>
-            </div>
-            <div>
+            
+            <!-- <div>
                 <img src="logo.png" alt="logo.png">
-            </div>
-
-            <form action="jares.php">
-                <label for="name">WeelKy Newsletter</label>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="text" name="email" id="email" placeholder="Email">
-                <input type="submit" value="Suscribe">
+            </div> -->
+            
+            
         </section>
+        <div class="container-copyryght">
+            <!-- <div>
+                    <p>11-22-2222</p>
+                </div>
+                <div>
+                    <a href="selflog033@gmail.com">selflog033@gmail.om</a>
+                </div>
+                <div>
+                    <p>1744 Narnia park <br> IA 26253</p>
+                </div>
+                <div>-->
+            <p>© 2024 SelfLoG. Todos los derechos reservados.</p>
+        </div>
 
-        <p>© 2024 SelfLoG. Todos los derechos reservados.</p>
+        
+        
     </footer>
 </body>
 </html>
