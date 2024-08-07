@@ -1,0 +1,20 @@
+.card-container {
+    img{
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+    ul{
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fil(minmax(200px)), 1fr);
+        
+        padding-left: 0;
+        margin-top: 10px;
+        gap: 20px;
+        list-style: none;
+     
+        
+    
+    }
+}
