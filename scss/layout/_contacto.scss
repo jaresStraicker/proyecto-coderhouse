@@ -1,0 +1,39 @@
+.contacto-container{
+    display: grid;
+    grid-template-columns: repeat(2 11fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    margin-top: 60px;
+    margin-left: 15px;
+    align-items: center;
+   color: $colorWhite;
+   .container-formulario-de-contacto{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+    background-color: #81455e;
+    
+    .bottom-form, .naame, textarea, .email-{
+    
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+}
+
+.contenedor-redes{
+    
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: #81455e;  
+    border-radius: 5px;
+
+    .redes{
+    
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+}
+
+}

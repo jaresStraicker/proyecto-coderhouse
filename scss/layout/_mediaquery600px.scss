@@ -1,0 +1,233 @@
+//version min 600px
+
+@media only screen and (min-width: 600px){
+
+    header{
+        height: 80px;
+        padding: 0;
+
+        .logo{ 
+        
+            img{
+                width: 50px;
+        }
+
+        }
+        
+        
+        
+    }
+
+    .carousel-item{
+        height: 360px; 
+    }
+
+    .border-btn{
+        
+        border: 1px solid gray;
+        box-shadow: 3px 2px 4px rgb(6, 219, 219);
+    }
+
+    .card-container{
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat((auto-fil(minmax 200px)), 1fr);
+            padding: 0;
+            margin-top: 10px;
+            gap: 20px;
+            list-style: none;
+
+            li{
+                border: 1px solid rgb(151, 46, 114);
+                border-radius: 8px;
+                
+                width: 90%;
+                margin: 30px;
+                overflow: hidden;
+
+                .card-contenido{
+                    padding: 16px;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+
+    //media query footer
+
+    .container-redes-form{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,200px);
+
+        ul{
+
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 0px;
+            margin-bottom: 90px;
+            justify-content: space-around;
+            padding-left: 0;
+            margin-left: 0px;
+            list-style: none;
+
+            li{
+                margin: 5px;
+            }
+        }
+
+        .logo-selfLoG{
+    
+            justify-items: center;
+
+            img{
+                
+                width: 550px;
+                height: 200px;
+                margin-top: 5px;
+
+            }
+        
+        }
+        
+       
+        
+        
+    }
+
+
+    .container-copyryght{
+        color: $colorWhite;
+        border-top: 2px solid $colorBlack;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        width: 105%;
+        font-size:x-small;
+        text-align: center;
+
+        p{
+
+            margin-top: 6px;
+
+        }
+        
+    }
+
+    //media query - Favoritos
+
+    .favoritos-perfil{
+        margin-top: 90px;
+    }
+
+    //media query - User
+
+    .contenedor-datos-user{
+        margin-top: 85px;
+
+        .perfil{
+
+            width: 120px;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: -100px;
+        }
+
+        .contenedor-descripcion{
+   
+    
+            margin-top: 15px;
+            margin-left: 4px;
+            
+        }
+
+        .items-contador{
+
+    
+            margin-right: 45px;
+            
+        
+            
+         }    
+        
+    
+        
+        
+        
+        
+        
+     }
+
+     .galerry{
+
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        text-align: center;
+        font-size: x-large;
+        border-top: 1px solid $colorBlack;
+        
+        width: 100%;
+
+        h4{
+            margin: 100px;
+        }
+
+        img{
+            width: 100px;
+        }
+
+        .video{
+
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            video{
+                
+                width: 300px;
+                margin-left: 10px;
+
+
+                
+            }
+
+            
+
+            .video-perfil{
+                width: 95%;
+                margin-left: 25px;
+                margin-bottom: 25px;
+            }
+        }
+     }
+
+     //media query - Contacto               
+
+
+     .contacto-container{
+
+        
+        display: grid;
+        grid-template-columns: repeat(2 11fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+        margin-top: 95px;
+        margin-left: 8px;
+        align-items: center;
+       color: $colorWhite;
+    
+    }
+
+
+
+}

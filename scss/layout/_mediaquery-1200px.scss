@@ -1,0 +1,26 @@
+//media query - despstok y portatil > 1200px
+
+@media only screen and (min-width: 1200px){
+
+    //header
+
+    header{
+        input{
+
+            display: flex;
+        }
+    }
+
+    //card-Container
+
+    .card-container{
+
+        
+        ul{
+            display: grid;
+            grid-template-columns: repeat(4,300px);
+            justify-content: center;
+   
+        }
+    }
+}

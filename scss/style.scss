@@ -1,7 +1,39 @@
+//variables
+
+@import "./utilities/variables";
+
+//reset
+
 @import "./base/reset";
+
+//components-hover
+
+
+
+//Header
 @import "./layout/header";
 @import "./components/_main-bordertop.scss";
+
+//Cards
 @import "./components/card";
 @import "./layout/cardContainer";
+
+//Footer
 @import "./layout/footer";
 @import "./components/copyright";
+
+//layout - Perfil
+@import "./layout/favoritos-perfiles";
+@import './layout/perfil';
+@import './layout/galerry';
+
+//layout - Contacto
+@import './layout/contacto';
+
+//media query
+@import './layout/mediaquery600px';
+@import './layout/mediaquery768px';
+@import './layout/mediaquery1023px';
+@import './layout/mediaquery1024px';
+@import './layout/mediaquery-1200px';
+@import './layout/mediaquery1440px';

@@ -1,0 +1,134 @@
+//media query 768px
+
+
+@media only screen and (min-width: 768px){
+
+     //header
+     header{
+        nav{
+            ul{
+                display: flex;
+    
+            }
+           
+
+        }
+        .menu-hamburguesa{
+            display: none;
+        }
+       
+     }
+
+     //media query - Perfil
+     .contenedor-datos-user{
+
+        margin-top: 85px;
+
+        .perfil{
+
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            margin-left: -150px;
+
+        }
+
+        .contenedor-descripcion{
+       
+        
+            margin-top: 120px;
+            margin-left: 0px;
+        }
+
+        .items-contador{
+    
+        
+            margin-right: 45px;
+            
+            
+            
+        
+            
+         }
+
+         .mejores-fotos-user{
+
+            margin-top: 80px;
+            
+           
+            
+        }
+     }
+
+     .gallery{
+
+        h4{
+            margin: 15px;
+        }
+
+        img{
+            width: 100px;
+        }
+
+        .video{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            video{
+                width: 300px;
+                margin-left: 10px;
+            }
+
+            .video-perfil{
+                width: 95%;
+                margin-left: 25px;
+                margin-bottom: 25px;
+            }
+        
+
+
+            
+        }
+
+        
+        
+        
+        
+        
+    }
+
+    //media query - Contacto
+
+    .contacto-container{
+        display: grid;
+        grid-template-columns: repeat(2 11fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+        margin-top: 100px;
+        margin-left: 2px;
+        
+        align-items: center;
+       color: $colorWhite;
+
+       .container-formulario-de-contacto{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 300px;
+        
+        background-color: #81455e;
+
+        .bottom-form, .naame, textarea, .email-{
+    
+            width: 100%;
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+    }
+    
+    }
+
+
+
+}

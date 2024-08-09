@@ -1,0 +1,136 @@
+
+//media query 1023px
+@media only screen and (min-width:1023px){
+    //header
+    header{
+        h1{
+            display: flex;
+            margin-left: 160px;
+        }
+    }
+
+    //media query - Card-Container
+    .card-container{
+        width: 100%;
+        justify-content: space-between;
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            justify-content: center;
+        }
+    }
+
+    //media query - Perfil
+    .contenedor-datos-user{
+        margin-top: 85px;
+
+
+        .perfil{
+        
+        
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: -150px;
+
+     }
+
+     .contenedor-descripcion{
+        text-align: center;
+        
+        margin: 2rem;
+     }
+
+     .contenedor-items{
+      
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,100px);
+        font-size: 1px;        
+        
+         margin-top: 50px;
+         
+     }
+
+     .items-contador{
+        margin-right: 45px;
+
+        h5{
+            color: $colorWhite;
+            font-size: 40px;
+        }
+     }
+
+     .p1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-weight: bolder;
+        color: $colorWhite;
+     }
+     .p2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-weight: bolder;
+        color: $colorWhite;
+     }
+     .p3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        font-weight: bolder;
+        color: $colorWhite;
+     }
+
+     .mejores-fotos-user{
+        margin-top: 80px;
+     }
+
+
+    
+
+
+   
+     }
+
+     //galeria de fotos - videos user
+
+     .gallery{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        text-align: center;
+        font-size: x-large;
+        border-top: 1px solid $colorBlack;
+        
+        width: 100%;
+
+        h4{
+            margin: 15px;
+        }
+
+        img{
+            width: 100px;
+        }
+
+        .video{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            video{
+                width: 300px;
+                margin-left: 10px;
+            }
+
+            .video-perfil{
+                width: 95%;
+                margin-left: 25px;
+                margin-bottom: 25px;
+            }
+            
+        }
+        
+    }
+
+}
