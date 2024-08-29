@@ -6,13 +6,27 @@
 
 @import "./base/reset";
 
-//components-hover
+//components
+
+//carrusel
+
+@import "./components/seccion-carrusel";
+
+ // navbar boostrap edicion para mi proyecto
+
+ @import "./components/navbarboostrap.scss";
 
 
 
 //Header
 @import "./layout/header";
 @import "./components/_main-bordertop.scss";
+
+
+
+
+
+
 
 //Cards
 @import "./components/card";

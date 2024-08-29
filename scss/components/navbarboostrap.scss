@@ -1,0 +1,27 @@
+.navbar{
+    
+
+    --bs-navbar-color: white;
+    --bs-navbar-hover-color: gray;
+    --bs-navbar-disabled-color: black;
+    background-color: #451d2e !important;
+    .bg-body-tertiary{
+        --bs-bg-opacity: 1;
+        background-color: black;
+
+    }
+    .btn-outline-success{
+        --bs-btn-color: white;
+        --bs-btn-border-color: white;
+        --bs-btn-hover-color: #6d354d;
+        --bs-btn-hover-bg: white;
+        --bs-btn-hover-border-color: #0f1110;
+        
+    }
+
+    h1{
+        color: white;
+    }
+
+    
+}

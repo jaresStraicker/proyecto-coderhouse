@@ -16,87 +16,30 @@ body a:hover {
   color: gray;
 }
 
-header {
-  background-color: #451D2E;
+.w-100 {
+  width: 100% !important;
+  height: 100%;
+}
+
+.navbar {
+  --bs-navbar-color: white;
+  --bs-navbar-hover-color: gray;
+  --bs-navbar-disabled-color: black;
+  background-color: #451d2e !important;
+}
+.navbar .bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: black;
+}
+.navbar .btn-outline-success {
+  --bs-btn-color: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: #6d354d;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: #0f1110;
+}
+.navbar h1 {
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 50px;
-  padding: 0;
-  box-shadow: 4px 2px 8px rgb(228, 8, 159);
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-  margin-left: 0.5em;
-  width: 45px;
-  justify-content: space-between;
-}
-header .logo-selflog {
-  width: 45px;
-  border-radius: 50%;
-  margin-left: 5px;
-  box-shadow: 2px 2px 3px black;
-}
-header h1 {
-  border-radius: 5px;
-  display: none;
-  transition: 2s;
-}
-header h1 a {
-  text-decoration: none;
-  color: white;
-}
-header .buscador {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 70%;
-}
-header .buscador .menu-hamburguesa {
-  padding: 5px;
-  transition: 2s;
-}
-header .buscador input {
-  width: 70%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px black;
-  display: none;
-}
-header a {
-  text-decoration: none;
-  color: white;
-  margin: 15px;
-  border-radius: 5px;
-  box-shadow: 2px 4px 3px black;
-}
-header nav {
-  display: flex;
-  margin: 25px;
-  margin-left: 0;
-  align-content: center;
-}
-header nav ul {
-  list-style: none;
-  display: none;
-}
-header nav ul li {
-  margin: 15px;
-  width: 100%;
-  padding-left: 0;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  margin: 15px;
-  border-radius: 5px;
-  box-shadow: 2px 4px 3px black;
 }
 
 .border-btn {
@@ -327,7 +270,6 @@ header nav ul li a {
 
 @media only screen and (min-width: 600px) {
   header {
-    height: 80px;
     padding: 0;
   }
   header .logo img {
